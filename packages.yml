@@ -10,6 +10,12 @@ packages:
 
   - git: "https://github.com/superbolt-x/bolt-dbt-shopify-package.git"
     revision: main
+ 
+  - git: "https://github.com/superbolt-x/bolt-dbt-shopify-package-eu.git"
+    revision: main
+    
+  - git: "https://github.com/superbolt-x/bolt-dbt-shopify-package-uk.git"
+    revision: main
 
   - git: "https://github.com/superbolt-x/bolt-dbt-tiktok-package.git"
     revision: main
