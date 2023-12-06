@@ -26,6 +26,8 @@ link_clicks,
 add_to_cart,
 purchases,
 revenue,
+revenue_7_d_click,
+purchases_7_d_click,
 CASE WHEN campaign_name ~* 'sb' AND campaign_name ~* '- us' THEN 'US'
      WHEN campaign_name ~* 'sb' AND campaign_name ~* '- uk' THEN 'UK'
      WHEN campaign_name ~* 'sb' AND campaign_name ~* '- eu' THEN 'EU'
