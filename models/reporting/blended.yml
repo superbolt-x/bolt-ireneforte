@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: gsheet_raw
+    schema: gsheet_raw
+    tables:
+      - name: preview_links
+        identifier: preview_links
