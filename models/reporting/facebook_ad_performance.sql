@@ -1,5 +1,5 @@
 {{ config (
-    alias = target.database + '_facebbok_ad_performance'
+    alias = target.database + '_facebook_ad_performance'
 )}}
 
 SELECT 
@@ -38,5 +38,9 @@ CASE WHEN campaign_name ~* 'sb' AND campaign_name ~* 'Prospecting' AND campaign_
      WHEN campaign_name ~* 'sb' AND campaign_name ~* 'Prospecting' AND campaign_name ~* 'EU' THEN 'Prospecting EU'
      WHEN campaign_name ~* 'sb' AND campaign_name ~* 'Retargeting' AND campaign_name ~* 'EU' THEN 'Retargeting EU'
      ELSE 'Others'
-END AS campaign_type
-FROM {{ ref ('facebook_performance_by_ad') }} --reporting.ireneforte_facebook_performance_by_ad
+END AS campaign_type,
+us_preview_link,
+uk_preview_link
+FROM {{ ref ('facebook_performance_by_ad') }} r
+LEFT JOIN {{ source('gsheet_raw','preview_links') }} g 
+    ON r.ad_name = g.us_ad_name AND r.ad_name = g.uk_ad_name
