@@ -42,7 +42,7 @@ CASE WHEN campaign_name ~* 'sb' AND campaign_name ~* 'Prospecting' AND campaign_
      ELSE 'Others'
 END AS campaign_type,
 CASE WHEN ad_name = 'Static - Age-Defying Secret Ingredient - Serums & Oils PLP - Hero Product Approach - NonLifestyle - Face Serum' AND region = 'US' THEN 'https://fb.me/2gA3bFCbmp9SznF'
-    WHEN ad_id = 'Static - Italy\'s Best Kept Skincare Secret Customer Quote - Masks & Scrubs PLP - Customer Testimonial Approach - NonLifestyle - Face Mask' AND region = 'US' THEN 'https://fb.me/1GNFra8N1nmxAZB'
+    WHEN ad_name = 'Static - Italy\'s Best Kept Skincare Secret Customer Quote - Masks & Scrubs PLP - Customer Testimonial Approach - NonLifestyle - Face Mask' AND region = 'US' THEN 'https://fb.me/1GNFra8N1nmxAZB'
     WHEN ad_name = 'Video -  Shop Pistachio Lip Balm B Roll - Pistachio Lip Balm PDP - Brand Intro Approach - Lifestyle - Face' AND region = 'US' THEN 'https://fb.me/1OhPDWa1MvyaWcK'
     WHEN ad_name = 'Video - Shop Pistachio Lip Balm B Roll - Pistachio Lip Balm PDP - Brand Intro Approach - Lifestyle - Face' AND region = 'US' THEN 'https://fb.me/1FJBHgt2zyAp8NV'
     WHEN ad_name = 'Video - Updated Hibiscus Night Cream Irene Footage - Face PLP - Brand Intro Approach - Lifestyle - Face Cream - Copy' AND region = 'US' THEN 'https://fb.me/1N41OZvZYxRVBq9'
