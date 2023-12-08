@@ -115,5 +115,10 @@ CASE WHEN ad_name = 'Static - Age-Defying Secret Ingredient - Serums & Oils PLP 
     WHEN ad_name = 'Static - Up to 25% off Award Winning Sicilian Skincare - Black Friday Ad Launch - NonLifestyle - Face - Rose Oil' AND region = 'UK' THEN 'https://fb.me/26lB4Ma0iF6NOiU'
     WHEN ad_name = 'Video - Our Black Friday Event - UGC - Limited Time Offer Banner - 25% off messaging - UK Black Friday Ad Launch - UK Black Friday Conversion Focused Instant Experience - Face - Phytomelatonin Serum' AND region = 'UK' THEN 'https://fb.me/1QfdNeYTZc0XEra'
     WHEN ad_name = 'Carousel - Forte Idratante Routine - UK Homepage - Routines Approach - NonLifestyle - Face - Product Tag' AND region = 'UK' THEN 'https://fb.me/1GJj5nT4LEgLLRV'
+    WHEN ad_name = 'Video - Olive Eye Cream Irene Footage - UK Face PLP - Brand Intro Approach - Lifestyle - Face Cream - Copy' AND region = 'UK' THEN 'https://fb.me/1QfGtuD2KwwKRe4'
+    WHEN ad_name = 'Static - Our Biggest Offer of the Year - UK Homepage - 25% off messaging - UK Black Friday ad launch - Lifestyle - Face - Phytomelatonin Serum' AND region = 'UK' THEN 'https://fb.me/1GHTp50BkAAi649'
+    WHEN ad_name = 'Static - Up to 25% off Award Winning Sicilian Skincare - Black Friday Ad Launch - UK Homepage - NonLifestyle - Face - Rose Oil' AND region = 'UK' THEN 'https://fb.me/1FqbfQmOjnPuqgP'
+    WHEN ad_name = 'Video - Meet The Gamechanger Phyto - Phyto PDP - Lifestyle - Face - Phytomelatonin Launch - Phytomelatonin - UK - UK Black Friday Conversion Focused Instant Experience' AND region = 'UK' THEN 'https://fb.me/21WU1L8zKrEc3jl'
+    WHEN ad_name = 'Carousel - Forte Idratante Routine - BF Messaging - Multiple PLP/PDP - Routines Approach -UK Black Friday Conversion Focused Instant Experience - NonLifestyle - Face' AND region = 'UK' THEN 'https://fb.me/1OL5DpBR0clf4C3'
 END AS preview_link
 FROM {{ ref ('facebook_performance_by_ad') }}
