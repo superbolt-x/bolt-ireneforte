@@ -16,8 +16,8 @@ engaged_sessions,
 bounce_rate,
 purchase_value,
 conversions,
-ecommerce_purchases,
 total_revenue,
+purchase,
 session_duration,
 bounced_sessions
 FROM {{ ref('ga4_performance_by_campaign') }}
