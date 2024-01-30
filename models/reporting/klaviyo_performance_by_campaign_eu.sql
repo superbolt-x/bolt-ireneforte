@@ -31,8 +31,8 @@ WITH
         , sum(coalesce(first_orders_revenue,0)) as first_orders_revenue
         , sum(coalesce(repeat_orders_revenue,0)) as repeat_orders_revenue
         {%- endif %}
-    FROM {{ ref('klaviyo_campaigns') }}
-    LEFT JOIN {{ ref('klaviyo_placed_order') }} USING(date,campaign_id)
+    FROM {{ ref('klaviyo_campaigns_eu') }}
+    LEFT JOIN {{ ref('klaviyo_placed_order_eu') }} USING(date,campaign_id)
     WHERE flow_name = ''
     GROUP BY 
         date_granularity,
