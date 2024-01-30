@@ -1,5 +1,5 @@
 {{ config (
-    alias = target.database + '_klaviyo_performance_by_campaign'
+    alias = target.database + '_klaviyo_performance_by_campaign_eu'
 )}}
     
 {%- set sho_schema_name, sho_table_name = 'shopify_base', 'shopify_eu_orders' -%}
