@@ -1,8 +1,8 @@
 {{ config (
-    alias = target.database + '_klaviyo_performance_by_flow_us'
+    alias = target.database + '_klaviyo_performance_by_flow_uk'
 )}}
 
-{%- set sho_schema_name, sho_table_name = 'shopify_base', 'shopify_us_orders' -%}
+{%- set sho_schema_name, sho_table_name = 'shopify_base', 'shopify_uk_orders' -%}
 {%- set sho_table_exists = check_source_exists(sho_schema_name, sho_table_name) %}
 {%- set date_granularity_list = ['day','week','month','quarter','year'] -%}
 
@@ -29,8 +29,8 @@ WITH
         , sum(coalesce(first_orders_revenue,0)) as first_orders_revenue
         , sum(coalesce(repeat_orders_revenue,0)) as repeat_orders_revenue
         {%- endif %}
-    FROM {{ ref('klaviyo_campaigns_us') }}
-    LEFT JOIN {{ ref('klaviyo_placed_order_us') }} USING(date,campaign_id)
+    FROM {{ ref('klaviyo_campaigns_uk') }}
+    LEFT JOIN {{ ref('klaviyo_placed_order_uk') }} USING(date,campaign_id)
     where flow_name != ''
     GROUP BY 
         date_granularity,
