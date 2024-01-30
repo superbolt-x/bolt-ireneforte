@@ -6,3 +6,21 @@ sources:
     tables:
       - name: preview_links
         identifier: preview_links
+
+  - name: shopify_base
+    schema: shopify_base
+    tables:
+      - name: shopify_eu_orders
+        identifier: shopify_eu_orders
+      - name: shopify_uk_orders
+        identifier: shopify_uk_orders
+      - name: shopify_us_orders
+        identifier: shopify_us_orders
+
+  - name: supermetrics_raw
+    schema: supermetrics_raw
+    tables:
+      - name: klav_campaigns
+        identifier: klav_campaigns
+      - name: klav_placed_orders
+        identifier: klav_placed_orders
