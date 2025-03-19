@@ -28,5 +28,5 @@ sources:
   - name: reporting
     schema: reporting
     tables:
-      - name: facebook_performance_by_ad
-        identifier: natura_facebook_performance_by_ad
+      - name: facebook_performance_by_ad_consolidated
+        identifier: natura_facebook_performance_by_ad_consolidated
