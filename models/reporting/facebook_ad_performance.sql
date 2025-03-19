@@ -126,4 +126,4 @@ CASE WHEN ad_name = 'Static - Age-Defying Secret Ingredient - Serums & Oils PLP 
     WHEN ad_name = 'Video - Meet The Gamechanger Phyto - Phyto PDP - Lifestyle - Face - Phytomelatonin Launch - Phytomelatonin - UK - UK Black Friday Conversion Focused Instant Experience' AND region = 'UK' THEN 'https://fb.me/21WU1L8zKrEc3jl'
     WHEN ad_name = 'Carousel - Forte Idratante Routine - BF Messaging - Multiple PLP/PDP - Routines Approach -UK Black Friday Conversion Focused Instant Experience - NonLifestyle - Face' AND region = 'UK' THEN 'https://fb.me/1OL5DpBR0clf4C3'
 END AS preview_link
-FROM {{ ref ('facebook_performance_by_ad') }}
+FROM {{ ref ('facebook_performance_by_ad_consolidated') }}
