@@ -24,3 +24,9 @@ sources:
         identifier: klav_campaigns
       - name: klav_placed_orders
         identifier: klav_placed_orders
+
+  - name: reporting
+    schema: reporting
+    tables:
+      - name: facebook_performance_by_ad
+        identifier: natura_facebook_performance_by_ad
